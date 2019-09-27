@@ -1,0 +1,42 @@
+Climbing flight
+
+Do the same analyses for propeller aircraft. As for the flight envelope, replace gamma with climb rate. We generally consider climb rate for propeller aircraft 
+instead of gamma because it is directly related to the maximum power constraint. In case of jet, the thrust constraint is directly related to gamma. 
+
+
+Turning flight: Consider a steady general turning flight with zero sideslip.
+
+1. For gamma = 3 degress and mu = 15 degrees, calculate thrust requied at different speeds. Plot thrust required against speed. Find the minimum thrust required 
+and corresponding throttle. Assume h = 5 km
+
+2. Calculate the minimum and maximum airspeeds for the above both graphically and numerically.
+
+3. The aircraft can maintain a steady turn with a bank angle of 15 degrees at many different flight path angles. Find the maximum flight path angle.
+
+4. For level turn at h = 5 km, calculate the maximum sustained turn rate, minimum radius of turn and flight conditions for maximum load factor turn. Pay 
+attention to their order of magnitude.
+
+5. Plot bank angle vs. speed at h = 5 km for gamma = 3 degrees and maximum throttle. Justify why the curve looks so. In the same curve, plot the stall limit,
+and load factor limit (assume nmax = 2). 
+
+6. In the figure of 5, plot contours for different constant values of radii of turn and from that find the minimum radius of turn. Compare it with the minimum 
+radius of turn for level turn.
+
+7. Find the flight ceiling for gamma = 3 degrees and mu = 15 degrees.
+
+8. Plot alitude vs. speed envelope for the above gamma and mu.
+
+9. Repeat 1-3 and 5-8 for gamma = -2 degrees.
+
+9. Plot 3D flight envelope for gamma = 3 degrees
+
+10. Plot 3D flight envelope for mu = 15 degrees.
+
+11. Repeat the above for the propeller aircraft. Here, thrust should replaced with power. Instead of gamma, consider a climb rate of 3 m/s and mu is 10 degrees.
+
+12. As for 3. note the following change: A propeller aircraft can maintain a steady turn with a bank angle of 10 degrees at many different climb rates. 
+Due to the flight constraints that must be satisfied, especially the limit on the maximum power that the propeller and internal combustion engine can provide,
+there is a maximum climb rate. Find the maximum climb rate at mu = 10 degrees.
+
+13. For 3D envelopes consider climb rate in place of gamma.
+
