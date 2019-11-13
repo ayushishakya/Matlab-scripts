@@ -1,6 +1,5 @@
-% wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
 function c = stumpC(z)
-% wwwwwwwwwwwwwwwwwwwwww
 %{
 This function evaluates the Stumpff function C(z) 
 z - input argument
@@ -14,4 +13,3 @@ c = (cosh(sqrt(-z)) - 1)/(-z);
 else
 c = 1/2;
 end
-% wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww

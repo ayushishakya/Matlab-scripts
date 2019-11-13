@@ -1,0 +1,28 @@
+%{
+A = input("A:");
+B = input("B:");
+C = input("C:");
+D = input("D:");
+%}
+%system matrix
+A = [0 -1 1; 1 -2 1; 0 1 -1];
+ranksys = rank(A);
+
+%control matrix
+B = [1 0; 2 1; 1 2];
+
+%output matrix
+C = [0 1 0];
+D = zeros(size(C, 1),size(B,2));
+
+disp("System: ");
+sys = ss(A, B, C, D);
+display(sys);
+
+izeroes = tzero(sys);
+disp("Invariant zeroes: ");
+display(izeroes);
+
+tzeroes = tzero(minreal(sys));
+disp("Transmission zeroes: ");
+display(eigval);

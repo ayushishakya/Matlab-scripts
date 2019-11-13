@@ -1,17 +1,8 @@
-% wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
 function coe = coe_from_sv(R,V,mu)
-% wwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
 %{
-% This function computes the classical orbital elements (coe)
-% from the state vector (R,V) 
-%
-mu - gravitational parameter (km^3/s^2)
-R - position vector in the geocentric equatorial frame (km)
-V - velocity vector in the geocentric equatorial frame (km)
-r, v - the magnitudes of R and V
-vr - radial velocity component (km/s)
-H - the angular momentum vector (km^2/s)
-h - the magnitude of H (km^2/s)
+This function computes the classical orbital elements (coe) from the state vector (R,V) 
 incl - inclination of the orbit (rad)
 N - the node line vector (km^2/s)
 n - the magnitude of N
@@ -23,14 +14,9 @@ eps - a small number below which the eccentricity is considered
 to be zero
 w - argument of perigee (rad)
 TA - true anomaly (rad)
-a - semimajor axis (km)
-pi - 3.1415926...
 coe - vector of orbital elements [h e RA incl w TA a]
-
 %}
 
-
-% ---------------------------------------------
 eps = 1.e-10;
 r = norm(R);
 v = norm(V);
@@ -87,4 +73,3 @@ end
 a = h^2/mu/(1 - e^2);
 coe = [h e RA incl w TA a];
 end %coe_from_sv
-% wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
